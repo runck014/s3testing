@@ -24,3 +24,10 @@ Time taken: 5200 ms
 Test completed.
 
 ```
+
+# General s3 Usage Notes
+The `s3cmd` tool works similar to a regular file system.
+
+1. Make bucket `s3cmd mb s3://your-bucket-name`
+2. Upload file `s3cmd put /path/to/localfile.txt s3://your-bucket-name/` (if from PWD, just use `s3cmd put $PWD'/locafile.txt' s3://...`
+3. List files or available buckets `s3cmd ls s3://your-bucket-name`
